@@ -1,16 +1,207 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="ProSite - AI Infrastructure">
+	<!-- Hero Section Minimalista -->
+	<section class="relative pt-8 pb-8 overflow-hidden">
+		<div class="container mx-auto px-6 relative z-10">
+			<div class="max-w-4xl mx-auto text-center">
+				<!-- Badge Sutil -->
+				<div
+					class="inline-flex items-center px-3 py-1 rounded-full border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 text-xs font-medium mb-8"
+				>
+					<span>Research Preview 1</span>
+				</div>
+
+				<!-- Heading OpenAI Style -->
+				<h1
+					class="text-5xl md:text-7xl font-semibold text-zinc-900 dark:text-white mb-8 tracking-tight leading-[1.1]"
+				>
+					Creando inteligencia <br class="hidden md:block" />
+					<span class="text-zinc-500 dark:text-zinc-400"
+						>para el futuro.</span
+					>
+				</h1>
+
+				<!-- Subtitle -->
+				<p
+					class="text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 mb-12 max-w-2xl mx-auto leading-relaxed font-light"
+				>
+					Infraestructura de computación diseñada para escalar modelos
+					de lenguaje de próxima generación.
+				</p>
+
+				<!-- Buttons "Pro" (Large Padding) -->
+				<div
+					class="flex flex-col sm:flex-row gap-4 justify-center items-center"
+				>
+					<a href="#demo" class="btn-primary">
+						Empezar
+					</a>
+					<a href="#features" class="btn-secondary">
+						Leer paper
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Features Section (Grid limpio) -->
+	<section
+		id="features"
+		class="pt-8 pb-8 border-t border-zinc-100 dark:border-zinc-800"
+	>
+		<div class="container mx-auto px-6">
+			<div class="grid md:grid-cols-3 gap-12">
+				<!-- Feature 1 -->
+				<div class="group">
+					<div
+						class="w-12 h-12 border border-zinc-200 dark:border-zinc-800 rounded-md flex items-center justify-center mb-6 text-zinc-900 dark:text-white group-hover:bg-zinc-50 dark:group-hover:bg-zinc-900 transition-colors"
+					>
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="1.5"
+								d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg
+						>
+					</div>
+					<h3
+						class="text-lg font-semibold text-zinc-900 dark:text-white mb-3"
+					>
+						Rendimiento
+					</h3>
+					<p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">
+						Optimizado para baja latencia en inferencia de modelos
+						grandes. Arquitectura distribuida globalmente.
+					</p>
+				</div>
+
+				<!-- Feature 2 -->
+				<div class="group">
+					<div
+						class="w-12 h-12 border border-zinc-200 dark:border-zinc-800 rounded-md flex items-center justify-center mb-6 text-zinc-900 dark:text-white group-hover:bg-zinc-50 dark:group-hover:bg-zinc-900 transition-colors"
+					>
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="1.5"
+								d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+							></path></svg
+						>
+					</div>
+					<h3
+						class="text-lg font-semibold text-zinc-900 dark:text-white mb-3"
+					>
+						Seguridad
+					</h3>
+					<p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">
+						Encriptación de grado militar en reposo y en tránsito.
+						Cumplimiento SOC2 Tipo II garantizado.
+					</p>
+				</div>
+
+				<!-- Feature 3 -->
+				<div class="group">
+					<div
+						class="w-12 h-12 border border-zinc-200 dark:border-zinc-800 rounded-md flex items-center justify-center mb-6 text-zinc-900 dark:text-white group-hover:bg-zinc-50 dark:group-hover:bg-zinc-900 transition-colors"
+					>
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="1.5"
+								d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+							></path></svg
+						>
+					</div>
+					<h3
+						class="text-lg font-semibold text-zinc-900 dark:text-white mb-3"
+					>
+						Escalabilidad
+					</h3>
+					<p class="text-zinc-500 dark:text-zinc-400 leading-relaxed">
+						Escale de cero a millones de peticiones por segundo sin
+						cambios en la arquitectura base.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- HTMX Demo Section (Clean) -->
+	<section
+		id="demo"
+		class="pt-8 pb-8 bg-zinc-50 dark:bg-zinc-900/50 border-t border-zinc-100 dark:border-zinc-800"
+	>
+		<div class="container mx-auto px-6">
+			<div class="max-w-2xl mx-auto text-center mb-16">
+				<h2
+					class="text-3xl font-semibold text-zinc-900 dark:text-white mb-4 tracking-tight"
+				>
+					Interactividad Nativa
+				</h2>
+				<p class="text-zinc-500 dark:text-zinc-400 text-lg">
+					Sin frameworks pesados. Solo HTML y el servidor.
+				</p>
+			</div>
+
+			<div class="max-w-xl mx-auto">
+				<div
+					class="bg-white dark:bg-zinc-950 rounded-lg border border-zinc-200 dark:border-zinc-800 p-8 md:p-10 shadow-sm"
+				>
+					<div class="flex flex-col gap-6">
+						<div
+							id="htmx-result"
+							class="min-h-[120px] flex items-center justify-center text-zinc-400 dark:text-zinc-600 text-sm border border-dashed border-zinc-200 dark:border-zinc-800 rounded-md bg-zinc-50 dark:bg-zinc-900"
+						>
+							El contenido cargado aparecerá aquí
+						</div>
+
+						<button
+							hx-get="/api/message"
+							hx-target="#htmx-result"
+							hx-swap="innerHTML"
+							class="w-full btn-primary"
+						>
+							Cargar datos
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Simple -->
+	<section class="pt-8 pb-8 border-t border-zinc-100 dark:border-zinc-800">
+		<div class="container mx-auto px-6 text-center">
+			<h2
+				class="text-3xl md:text-4xl font-semibold text-zinc-900 dark:text-white mb-8 tracking-tight"
+			>
+				Únete a la revolución.
+			</h2>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="#" class="btn-primary">
+					Empezar ahora
+				</a>
+				<a href="/contact" class="btn-ghost">
+					Contactar ventas
+				</a>
+			</div>
+		</div>
+	</section>
+</Layout>
